@@ -144,12 +144,13 @@
   .by_changing{
       width: 100%;
       margin-top: 10px;
+      margin-bottom: 45px;
+
   }
   .by_changing >ul>li a{
       display: block;
       width: 100%;
       padding-top: 10px;
-      margin-bottom: 45px;
   }
   .by_changing >ul>li img {
       width: 100%;

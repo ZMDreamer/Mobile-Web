@@ -91,6 +91,7 @@
     z-index: 999;
     bottom: 0;
     max-width: 640px;
+    min-width: 320px;
 }
 .fixed_footer>ul>li{
     width: 25%;
