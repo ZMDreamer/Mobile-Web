@@ -1,0 +1,80 @@
+.safety_layout {
+    width: 100%;
+    background: #F3F3F3;
+    max-width: 640px;
+    min-width: 320px;
+    margin: 0 auto;
+}
+.sf_header {
+    width: 100%;
+    text-align: center;
+    background-color: #fff;
+    position: relative;
+    line-height: 400%;
+}
+.sf_header>h3{
+    font-weight: normal;
+
+}
+.sf_header>i  {
+    position: absolute;
+    left: 4%;
+    top: 4%;
+    padding-left: 5px; 
+    font-size: 16px;
+}
+/* 表单css */
+.change_pw {
+    width: 100%;
+    margin-top: 15px;
+    font-size: 16px;
+    line-height: 400%;
+
+}
+.change_pw  li {
+    width: 100%;
+    background-color: #fff;
+    position: relative;
+    border-bottom: 1px solid #ccc;
+
+}
+.change_pw li .get_code {
+    position: absolute;
+    left: 56%;
+    top: 2%;
+    color: #666;
+    height: 100%;
+    cursor: pointer;
+}
+.change_pw li .hidden{
+    display: none;
+    left: 52%;
+    padding-right: 10px;
+    color: #ccc;
+}
+
+.change_pw  li:last-child input{
+    display: block;
+    margin-top: 10px;
+    width: 100%;
+    height: 100%;
+    background-color: #FFCF49;
+    line-height: 300%;
+    font-size: 20px;
+    color: #fff;
+    text-align: center;
+    padding-left: 0;
+
+}
+.change_pw input {
+    width: 100%;
+    border: none;
+    padding-left: 30%;
+}
+.change_pw span {
+    position: absolute;
+    left: 0;
+    top: 6%;
+    padding-left: 25px;
+
+}

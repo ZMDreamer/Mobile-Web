@@ -1,0 +1,143 @@
+/* 设置移动端的全屏*/
+html,body{
+    width: 100%;
+    height: 100%;
+    
+}
+.c_layout{
+    width: 100%;
+    height: 100%;
+    max-width: 640px;
+    min-width: 320px;
+    margin: 0 auto;
+}
+/* 头部搜索框 */
+.c_search{
+    width: 100%;
+    height: 50px;
+    position: absolute;
+    background-color: #ccc;
+    max-width: 640px;
+    min-width: 320px;
+    margin: 0 auto;
+    border-bottom: 1px solid #ccc;
+
+}
+.c_back,
+.c_menue{
+    width: 49px;
+    height: 49px;
+    position: absolute;
+    top: 0;
+    background: url(../images/jd-sprites.png);
+    padding: 14px;
+    background-size: 200px 200px;
+    background-origin: content-box;
+    background-clip: content-box;
+}
+.c_back{
+    left: 0;
+    background-position: -20px 0;
+}
+.c_menue{
+    right: 0;
+    background-position: -60px 0;
+}
+.search {
+    width: 100%;
+    height: 100%;
+    padding: 0 60px;
+}
+.search>input{
+    width: 100%;
+    height: 40px;
+    margin-top: 5px;
+    border-radius: 8px;
+    font-size: 16px;
+    color: #666;
+    padding-left: 8px;
+}
+/* 内容模块 */
+.c_content{
+    width: 100%;
+    height: 100%;
+    padding-top:50px;
+}
+/* 左边菜单列表 */
+.ct_left{
+    width: 100px;
+    height: 100%;
+    background-color: #eee;
+    float: left;
+    position: relative;
+    overflow: hidden;
+}
+.ct_left>ul{
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.ct_left >ul>li a {
+    display: block;
+    width: 100%;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    border-bottom: 1px solid #ccc;
+    border-left: 1px solid #ccc;
+    color: #333;
+}
+.ct_left >ul>li.active a {
+    background-color: #fff;
+    color: #e92322;
+    border-bottom: none;
+    border-left: none;
+}
+
+
+
+/* 右边内容模块 */
+.ct_right {
+    height: 100%;
+    margin-left: 100px;
+    display: flex;
+    flex-direction: column;
+   
+}
+/* banner图 */
+.ct_banner{
+    width: 100%;
+    display: block;
+
+}
+.ct_banner img {
+    width: 100%;
+    display: block;
+}
+/* 热卖 */
+.cr_goods{
+    width: 100%;
+    overflow: hidden;
+    flex: 1;
+    text-align: center;
+}
+.cr_goods>ul p {
+    padding-left: 20px;
+}
+.ct_right > h3 {
+    width: 100%;
+    line-height: 30px;
+    padding-left: 10px;
+    border-bottom: 1px solid #ccc;
+    margin: 20px 0;
+
+}
+.cr_goods>ul>li{
+    float: left;
+    width: 33.3%;
+}
+.cr_goods>ul>li>a{
+    width: 100%;
+}
+

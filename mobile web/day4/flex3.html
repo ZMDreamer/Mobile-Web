@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        ul{
+            list-style: none;
+            width: 90px;
+            height: 90px;
+            background-color: #666;
+            border-radius: 10px;
+            float: left;
+            margin-right:10px;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        ul li{
+            list-style: none;
+            width: 20px;
+            height: 20px;
+            background-color: red;
+            border-radius: 10px;
+        }
+
+        ul:nth-child(2) {
+           justify-content: space-around;
+            flex-direction: column;
+        }
+
+        ul:nth-child(3) {
+            justify-content: space-around;
+            align-items: center;
+
+        }
+        ul:nth-child(3) li{
+            margin: 5px;
+
+        }
+        ul:nth-child(3) li:nth-child(1) {
+            align-self:flex-start ;
+        }
+        ul:nth-child(3) li:nth-child(3) {
+            align-self:flex-end ;
+        }
+
+        ul:nth-child(4) {
+            justify-content: space-around;
+            align-items: center;
+
+        }
+        ul:nth-child(4) li{
+            margin: 5px;
+
+        }
+        ul:nth-child(4) li:nth-child(1) {
+            align-self:flex-end ;
+        }
+        ul:nth-child(4) li:nth-child(3) {
+            align-self:flex-start ;
+        }
+
+
+        ul:nth-child(5) {
+             justify-content: space-around;
+             align-items: center;
+             flex-wrap: wrap;
+
+         }
+        ul:nth-child(5) li{
+            margin: 10px;
+
+        }
+
+        ul:nth-child(6) {
+            justify-content: space-around;
+            align-items: center;
+            flex-wrap: wrap;
+
+
+        }
+        ul:nth-child(6) li {
+            margin: 5px;
+
+        }
+        ul:nth-child(6) li:nth-child(3){
+            margin: 0px 35px;
+
+        }
+
+
+        ul:nth-child(7) {
+            justify-content: space-around;
+            align-items: center;
+            flex-wrap: wrap;
+            flex-direction: column;
+
+
+        }
+        ul:nth-child(7) li {
+            margin: 5px;
+
+        }
+
+
+
+    </style>
+</head>
+<body style="height: 1000px;overflow-y:hidden }">
+<ul>
+    <li></li>
+</ul>
+
+
+<ul>
+    <li></li>
+    <li></li>
+</ul>
+
+<ul>
+    <li></li>
+    <li></li>
+    <li></li>
+</ul>
+
+<ul>
+    <li></li>
+    <li></li>
+    <li></li>
+</ul>
+
+<ul>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+</ul>
+
+<ul>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+</ul>
+
+<ul>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+</ul>
+
+
+</body>
+</html>

@@ -1,0 +1,106 @@
+/* the css of the header */
+.per_layout{
+    width: 100%;
+    background: #F3F3F3;
+    max-width: 640px;
+    min-width: 320px;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+}
+/* the css of the fixed_header */
+.fixed_header {
+    width: 100%;
+    max-width: 640px;
+    min-width: 320px;
+    height: 40px;
+    background-color:#0099FF;
+    text-align: center;
+    color: #fff;
+    position: fixed;
+    line-height: 39px;
+    z-index: 9999;
+}
+
+/* the css of the login function */
+.per_login{
+    width: 100%;
+    height: auto;
+    background: url(../images/login.gif) no-repeat 0 0/ 100% auto;
+    margin-top:39px;
+    position: relative;
+   
+}
+.per_login::after {
+    content: "";
+    display: block;
+    /*图片的宽高比计算得出*/
+    padding-top: 55%;
+  }
+  .login_btn {
+      display: block;
+      text-align: center;
+      position: absolute;
+      font-size: 16px;
+      color: #fff;
+      left: 50%;
+      top: 58%;
+      transform: translate(-50%,-50%)
+  }
+  .login_btn>i {
+      color: #ccc;
+    font-size: 32px;
+  }
+  .login_btn>p {
+      padding-top: 46px;
+  }
+  /* the css of the user information */
+  .user_inf {
+      width:100%;
+        background-color: #fff;
+  }
+  .user_inf>ul>li a {
+      
+      display: block;
+      width: 100%;
+    padding: 5% 0 0 15%;
+    position: relative;
+    font-size: 16px;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 10px;
+  }
+  .user_inf>ul>li i {
+    color: #0099FF;
+     position: absolute;
+      left: 5%;
+      top: 40%;
+      font-size: 18px;
+  }
+  .user_inf>ul>li i.after_i{
+    left: 80%;
+    color: #666;
+  }
+
+/* the css of the footer */
+.fixed_footer {
+    position: fixed;
+    width: 100%;
+    height: 45px;
+    background-color:#fff;
+    text-align: center;
+    z-index: 999;
+    bottom: 0;
+    max-width: 640px;
+    min-width: 320px;
+}
+.fixed_footer>ul>li{
+    width: 25%;
+    float: left;
+    padding: 5px 0;
+}
+.fixed_footer>ul>li p {
+    padding: 2px 0;
+}
+.fixed_footer>ul>li.select a {
+    color:#0099FF;
+}

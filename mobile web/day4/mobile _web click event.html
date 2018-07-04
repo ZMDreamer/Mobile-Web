@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable = no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+      *{
+          margin: 0;
+          padding: 0;
+      }
+        div{
+            width: 200px;
+            height: 200px;
+            background-color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="textBox">
+
+    </div>
+</body>
+<script>
+    var div = document.querySelector('.textBox');
+    var startX, startY,startTime;
+    div.addEventListener('touchstart',function(e){
+        // 判断屏幕上只能有一个手指
+        if (e.targetTouches.length > 1) {
+            return;
+        }
+        startX = e.changedTouches[0].clientX;
+        startY = e.changedTouches[0].clientY;
+        startTime = Date.now();
+    })
+    div.addEventListener('touchend',function(e){
+        // 判断离开的时候不能有两个手指
+
+        if (e.changedTouches.length >1) {
+            return;
+        }
+        //判断手指在屏幕上放置的时间不能超过指定的值
+        if (Date.now()-startTime > 150 ) {
+            return;
+        }
+        var endX = e.changedTouches[0].clientX;
+        var endY = e.changedTouches[0].clientY;
+        if ((endX - startX) <6&&(endY-startY)<6) {
+        console.log("本次事件为click事件")
+            
+        }
+    })
+
+
+
+</script>
+</html>
