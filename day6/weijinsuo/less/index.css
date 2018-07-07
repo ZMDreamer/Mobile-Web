@@ -1,0 +1,73 @@
+/* 头部样式 */
+.wjs_header {
+  height: 50px;
+  border-bottom: 1px solid #ccc;
+  text-align: center;
+  line-height: 50px;
+}
+.wjs_header .row {
+  height: 100%;
+}
+.wjs_header .row .wjs_phone {
+  height: 100%;
+  position: relative;
+  display: block;
+}
+.wjs_header .row .wjs_phone img {
+  position: absolute;
+  left: 50%;
+  top: 49px;
+  transform: translateX(-50%);
+  border: 1px solid #ccc;
+  border-top: none;
+  display: none;
+}
+.wjs_header .row .wjs_phone:hover {
+  text-decoration: none;
+}
+.wjs_header .row .wjs_phone:hover img {
+  display: block;
+  z-index: 999;
+}
+.wjs_header .row > div:nth-of-type(-n+3) {
+  border-right: 1px solid #ccc;
+}
+.wjs_header .row > div:last-of-type > .btn-danger {
+  background-color: #e92322;
+  padding: 3px 15px;
+}
+.wjs_header .row > div:last-of-type > .btn-danger:hover {
+  text-decoration: none;
+}
+.wjs_header .row > div:last-of-type > .btn-link {
+  color: #333;
+}
+.wjs_header .row > div:last-of-type > .btn-link:hover {
+  text-decoration: none;
+}
+/* 导航条样式 */
+.navbar.wjs-nav {
+  margin-bottom: 0;
+}
+.navbar.wjs-nav .navbar-brand {
+  height: 80px;
+  line-height: 50px;
+}
+.navbar.wjs-nav .navbar-brand > span {
+  font-size: 40px;
+  color: #e92322;
+}
+.navbar.wjs-nav .navbar-brand > span:last-of-type {
+  color: #333;
+}
+.navbar.wjs-nav .navbar-nav > li.active > a {
+  border-bottom: 3px solid #e92322;
+}
+.navbar.wjs-nav .navbar-nav > li > a {
+  height: 80px;
+  line-height: 50px;
+  font-size: 16px;
+}
+.navbar.wjs-nav .navbar-nav > li > a:hover {
+  border-bottom: 3px solid #e92322;
+}

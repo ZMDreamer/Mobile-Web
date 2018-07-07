@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Node and Less Install</title>
+    <style>
+    ul {
+        list-style: none;
+    }
+    
+    </style>
+</head>
+<body>
+    <div>
+        <ul>
+            <li>1.在node官网下载node安装包</li>
+            <li>2.安装已经下载好的安装包,最好不要改变安装路径傻瓜式安装</li>
+            <li>3. win +r 打开cmd黑窗口, 输入npm install npm -g命令,进行全局安装node</li>
+            <li>4. 检查node是否安装成功, 输入 npm -v</li>
+            <li>5.安装less运行环境, 在cmd窗口下输入 npm install -g less 或者 npm i less -g</li>
+            <li>6.然后文件会在线安装, 因为是在线安装所以需要网络</li>
+            <li>7.安装成功后, 输入lessc -v命令检查是否安装成功, 安装成功会出现版本</li>
+            <li>8.安装成功后less文件在c盘/电脑名/appData/Roaming/npm文件夹下</li>
+            <li>9.新建一个一less后缀的文件来解析改文件,在webstrom 和 vscode中会自动解析, vscode需要安装less插件,webstrom中需要设置</li>
+            <li>10.webstrom中在设置下面的工具选项下面的file watchers添加less模板,路径就是安装less路径,然后会跟vscode一样自动解析less文件</li>
+            <li>11.在cmd窗口中可以解析less文件, 首先在cmd窗口找到文件位置利用D:切换盘符, cd 文件路径来找到less文件在该盘的位置</li>
+            <li>12.找到后输入lessc 文件名.less 文件名.css,回车会生成文件名.css的文件,在当前文件夹下</li>
+        </ul>
+        <dl>
+            <dt>安装过程可能会出现的bug</dt>
+            <dd>如果安装node时候出现2502/2503错误,重新安装时以管理员的身份打开cmd窗口,然后输入msiexec /package node安装包的距离路劲/安装包的名字</dd>
+            <dd>如果在安装less时网络不稳定会产生npm-cache缓存文件,删除该文件然后清除回收站该文件, 重新安装, 还不行就重新启动电脑在安装</dd>
+        </dl>
+    </div>
+    
+</body>
+</html>

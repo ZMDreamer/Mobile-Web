@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/time.css">
+    <link rel="stylesheet" href="fonts/iconfont.css">
+    <link rel="stylesheet" href="css/base.css">
+    <meta name="viewport"  content="width=device-width, user-scalable=no, initial-scale=1.0">
+</head>
+<body>
+    <div class="layout">
+        <div class="header">
+            <a href="#" class="iconfont icon-fanhui">返回</a>
+            <a href="#" class="">账号与安全</a>
+        </div>
+
+
+        <form class="search" action="">
+            <ul class="search_box">
+                <li class="reg_tel">
+                    <label for="">手机号:</label> <input type="text" placeholder="您的注册手机号">
+                    <span id="getCode">获取验证码</span>
+                </li>
+                <li>
+                    <label for="">验证码:</label> <input type="text" placeholder="您手机收到的验证码">
+                </li>
+                <li>
+                    <label for="">新密码:</label> <input type="text" placeholder="6-20位字母或数字">
+                </li>
+                <li>
+                    <label for="">重复密码:</label> <input type="text" placeholder="6-20位字母或数字">
+                </li>
+
+            </ul>
+            <button  type="button">确定</button>
+        </form>
+    </div>
+
+
+    <script>
+        var time=5;
+        var time_id=null;
+        var getCode=document.getElementById("getCode");
+        var flag=true;
+        getCode.onclick=function(){
+            if(flag){
+                flag=false;
+                time_id=setInterval(function(){
+                    time--;
+                    getCode.innerHTML=time+'s之后再点击';
+                    if(time<0){
+                        clearInterval(time_id);
+                        flag=true;
+                        time=5;
+                        getCode.innerHTML='获取验证码';
+                    }
+                },1000);
+
+            }
+
+
+
+
+
+
+
+        }
+
+    </script>
+
+<!--0-768    xs  超小屏
+768-992  sm  小屏
+992-1200 md  中屏
+>1200    lg  大屏-->
+
+
+
+
+
+
+
+</body>
+</html>

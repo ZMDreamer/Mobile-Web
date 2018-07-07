@@ -1,0 +1,149 @@
+html,body{
+    font-family: "微软雅黑", sans-serif;
+}
+.layout{
+    max-width: 640px;
+    min-width:320px;
+    margin: 0 auto;
+    width: 100%;
+    background-color: #eee;
+    padding: 45px 0px 60px;
+}
+
+
+/*头部*/
+.layout .header{
+    position: fixed;
+    max-width: 640px;
+    min-width:320px;
+    top:0px;
+    height:45px;
+    width:100%;
+    line-height: 45px;
+    background-color: #0099FF;
+    z-index:999;
+
+}
+
+.layout .header h2{
+    font-size: 16px;
+    color:#fff;
+    line-height: 45px;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+.layout .header h2{
+    width:100%;
+    display: block;
+    text-align: center;
+
+}
+
+
+/*背景图*/
+.bg{
+    width: 100%;
+    height: 150px;
+    background:url('../images/top_banner.png') no-repeat center center/cover;
+    position: relative;
+}
+.bg .img{
+    width: 70px;
+    height: 70px;
+    position: absolute;
+    left:50%;
+    top:50%;
+    border-radius: 50%;
+    border:4px solid #fff;
+    transform: translate(-50%,-50%);
+}
+
+.main{
+    margin-top:10px;
+    width: 100%;
+    background-color: #fff;
+
+}
+
+.main li{
+    width: 100%;
+    border-bottom: 1px solid #999;
+}
+.main li a{
+    width: 100%;
+    line-height: 45px;
+    display: block;
+
+}
+.main li a span{
+    padding:0px 10px;
+}
+
+.icon-wujiaoxing::before{
+    color:#7BE0FA;
+    font-size:25px;
+}
+.icon-shezhi::before{
+    color:#DA7CE2;
+    font-size:25px;
+}
+.icon-guanyuwomen::before{
+    color:#06C1AE;
+    font-size:25px;
+}
+
+
+
+/*底部*/
+
+footer{
+    max-width: 640px;
+    min-width:320px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #fff;
+    border-top:1px solid #eee;
+}
+footer ul{
+    width: 100%;
+    margin: 0;
+    list-style: none;
+}
+footer ul li{
+    width:33.3%;
+    float: left;
+}
+footer ul li.active a{
+    color:red;
+}
+footer ul li.active a .iconfont{
+    color:red;
+
+}
+
+footer ul li a{
+    text-align: center;
+    color:#333;
+    font-size: 12px;
+    text-decoration: none;
+    display: block;
+
+}
+.icon-shangjia::before{
+    font-size: 17px;
+}
+
+footer ul li a p{
+    margin: 0px;
+}
+footer ul li a .iconfont{
+    font-size: 20px;
+    color:#666;
+}
+
+
+

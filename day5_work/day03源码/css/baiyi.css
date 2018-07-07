@@ -1,0 +1,235 @@
+html,body{
+    font-family: "微软雅黑", sans-serif;
+}
+.layout{
+    max-width: 640px;
+    min-width:320px;
+    margin: 0 auto;
+    width: 100%;
+    background-color: #eee;
+    padding: 45px 0px 60px;
+}
+
+
+/*头部*/
+.layout .header{
+    position: fixed;
+    max-width: 640px;
+    min-width:320px;
+    top:0px;
+    height:45px;
+    width:100%;
+    line-height: 45px;
+    background-color: #FF0000;
+    z-index:999;
+
+}
+
+.layout .header a{
+    font-size: 16px;
+    color:#fff;
+}
+
+.layout .header a.icon-fanhui{
+    position: absolute;
+    top: 0px;
+    left:0px;
+    letter-spacing: 5px;
+    font-size: 20px;
+    width:45px;
+    height:45px;
+    text-align: center;
+}
+
+.layout .header a:last-child{
+    width:100%;
+    display: block;
+    text-align: center;
+
+}
+
+
+/*first*/
+.layout .topimg{
+
+    position: relative;
+    height:175px;
+    width:100%;
+    background:url('../images/top_banner.png') no-repeat 0 0 / 100% 100%;
+}
+
+.layout .topimg .logo{
+    position: absolute;
+    top:20px;
+    left:20px;
+    width: 77.5px;
+    height: 77.5px;
+    display: block;
+
+}
+
+.layout .topimg .company{
+    position: absolute;
+    top:35px;
+    left:110px;
+    color:#fff;
+    font-size: 14px;
+    letter-spacing: 1px;
+
+}
+
+.layout .topimg .next{
+    position: absolute;
+    right:15px;
+    top:45px;
+    color:#fff;
+    font-size: 25px;
+    font-weight: bold;
+
+}
+
+.layout .topimg .medal{
+    position: absolute;
+    top:75px;
+    left:105px;
+}
+.layout .topimg .medal li{
+    background-color: #FF0000;
+    float:left;
+    margin-right: 3px;
+    border-radius: 5px;
+}
+.layout .topimg .medal li img{
+    width: 17px;
+    height: 17px;
+    display: block;
+}
+
+
+/*银元广告*/
+.layout .topimg .money{
+    position: absolute;
+    bottom:0px;
+    left:0px;
+    color:#fff;
+
+    width:100%;
+    background-color: rgba(0,0,0,0.3);
+    margin: 0px;
+    padding:7px 0;
+
+}
+
+.layout .topimg .money li{
+    text-align: center;
+}
+
+.layout .topimg .money li:nth-child(2){
+    border-left:1px solid #eee ;
+    border-right:1px solid #eee ;
+}
+
+.layout .topimg .money li p{
+    margin: 0;
+    font-size: 13px;
+}
+
+.layout .nav{
+    width: 100%;
+    background-color: #fff;
+    margin-bottom:10px;
+}
+
+.layout .nav .nav_box {
+    padding: 8px 15px 8px;
+    border-bottom: 1px solid #eee;
+}
+.layout .nav .nav_box:nth-child(3n-1) {
+    border-right: 1px solid #eee;
+    border-left: 1px solid #eee;
+}
+
+.layout .nav .nav_box a{
+    text-align: center;
+    display: block;
+    font-size: 13px;
+    padding: 0;
+    color:#333;
+}
+
+
+.layout .nav .nav_box a img{
+    width:39px;
+    height:39px;
+    display: block;
+    margin:0 auto;
+}
+
+.layout .nav .nav_box a p{
+
+    margin: 5px 0px 0px ;
+}
+
+
+
+/*图片*/
+.img_box{
+    width: 100%;
+    background-color: #fff;
+}
+.img_box li{
+    width: 100%;
+}
+.img_box li a{
+    display: block;
+}
+.img_box li a p{
+    margin: 0;
+    padding:0px 10px;
+}
+.img_box li a img{
+    display: block;
+    width: 100%;
+    height:140px;
+}
+
+
+/*底部*/
+
+footer{
+    max-width: 640px;
+    min-width:320px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #fff;
+    border-top:1px solid #eee;
+}
+footer ul{
+    width: 100%;
+    margin: 0;
+    list-style: none;
+}
+footer ul li.active a{
+    color:red;
+}
+footer ul li.active a .iconfont{
+    color:red;
+}
+
+footer ul li a{
+    text-align: center;
+    color:#333;
+    font-size: 12px;
+    text-decoration: none;
+    display: block;
+
+}
+
+footer ul li a p{
+    margin: 0px;
+}
+footer ul li a .iconfont{
+    font-size: 20px;
+    color:#666;
+}

@@ -1,0 +1,64 @@
+html, body{
+    width: 100%;
+    height: 100%;
+    
+}
+.login_layout{
+    width: 100%;
+    height: 100%;
+    max-width: 640px;
+    max-height: 640px;
+    margin: 0 auto;
+    position: relative;
+    .lg_content{
+        width: 100%;
+        height: 100%;
+        img{
+            z-index: -1;
+            width: 100%;
+            display: block;
+        }
+    }
+}
+.lg_count{
+    z-index: 2;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    >h1 {
+        width: 100%;
+        text-align: center;
+        padding: 120px 0;
+        color: #ffcf49;
+        letter-spacing: 10px;
+        font-weight: normal;
+    }
+    >form{
+        width: 100%;
+        input{
+           
+            margin: 0 auto;
+            display: block;
+            border: none;
+            color: #fff;
+            background-color: rgba(0,0, 0, 0.5);
+            padding:10px 10px 8px 50px;
+            line-height: 20px;
+          
+          &:nth-child(4) {
+              margin-top: 20px;
+              margin-bottom: 60px;
+          } 
+          &:nth-child(5){
+              text-align: center;
+              padding: 10px 16%;
+              background-color: #ffcf49;
+              border-radius: 10px;
+              color: black;
+
+          }
+        }
+    }
+}

@@ -1,0 +1,85 @@
+//定义颜色的变量
+@aa: red;
+@bb: #ccc;
+/*给ul添加样*/
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* 定义一个边框的函数*/
+
+.radius(@aa: 10px) {
+    border-radius: @aa;
+}
+
+ul {
+    .radius();
+    list-style: none;
+    width: 100px;
+    height: 100px;
+    background-color: @bb;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    float: left;
+    flex-direction: column;
+    margin: 5px 5px;
+    li {
+        width: 20px;
+        height: 20px;
+        background-color: @aa;
+        .radius(50%);
+    }
+    &:nth-child(2) {
+        justify-content: space-around;
+    }
+    &:nth-child(3) {
+        justify-content: space-around;
+        li {
+            margin: 5px;
+            &:nth-child(1) {
+                align-self: flex-start;
+            }
+            &:nth-child(3) {
+                align-self: flex-end;
+            }
+        }
+    }
+    &:nth-child(4) {
+        justify-content: space-around;
+        li {
+            margin: 5px;
+            &:nth-child(1) {
+                align-self: flex-end;
+            }
+            &:nth-child(3) {
+                align-self: flex-start;
+            }
+        }
+    }
+    &:nth-child(5) {
+        justify-content: space-around;
+        flex-wrap: wrap;
+        li {
+            margin: 10px;
+        }
+    }
+    &:nth-child(6) {
+        justify-content: space-around;
+        flex-wrap: wrap;
+        li {
+            &:nth-child(3) {
+                margin: 32px 0px;
+            }
+        }
+    }
+    &:nth-child(7) {
+        justify-content: space-around;
+        flex-wrap: wrap;
+        li {
+            margin: 6px;
+        }
+    }
+}

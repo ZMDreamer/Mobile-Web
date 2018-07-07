@@ -1,0 +1,90 @@
+@basecolor: #e92322;
+/* 头部样式 */
+
+.wjs_header {
+    height: 50px;
+    border-bottom: 1px solid #ccc;
+    text-align: center;
+    line-height: 50px;
+    .row {
+        height: 100%;
+        .wjs_phone {
+            height: 100%;
+            position: relative;
+            display: block;
+            img {
+                position: absolute;
+                left: 50%;
+                top: 49px;
+                transform: translateX(-50%);
+                border: 1px solid #ccc;
+                border-top: none;
+                display: none;
+            }
+            &:hover {
+                text-decoration: none;
+                img {
+                    display: block;
+                    z-index: 999;
+                    
+                }
+            }
+        }
+        >div {
+            &:nth-of-type(-n+3) {
+                border-right: 1px solid #ccc;
+            }
+            &:last-of-type {
+                >.btn-danger {
+                    background-color: @basecolor;
+                    padding: 3px 15px;
+                    &:hover {
+                        text-decoration: none;
+                    }
+                }
+                >.btn-link {
+                    color: #333;
+                    &:hover {
+                        text-decoration: none;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* 导航条样式 */
+
+.navbar {
+    &.wjs-nav {
+        margin-bottom: 0;
+        .navbar-brand {
+            height: 80px;
+            line-height: 50px;
+            >span{
+                font-size: 40px;
+                color: @basecolor;
+                &:last-of-type{
+                    color: #333;
+                }
+            }
+        }
+        .navbar-nav {
+            >li {
+                &.active {
+                    >a {
+                        border-bottom: 3px solid @basecolor;
+                    }
+                }
+                >a {
+                    height: 80px;
+                    line-height: 50px;
+                    font-size: 16px;
+                    &:hover {
+                        border-bottom: 3px solid @basecolor;
+                    }
+                }
+            }
+        }
+    }
+}
