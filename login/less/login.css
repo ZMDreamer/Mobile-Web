@@ -1,0 +1,81 @@
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+.login_layout {
+  width: 100%;
+  height: 100%;
+  max-width: 640px;
+  max-height: 640px;
+  margin: 0 auto;
+  position: relative;
+}
+.login_layout .lg_content {
+  width: 100%;
+  height: 100%;
+  background: url(../images/index_bg.jpg) no-repeat;
+  background-size: 100% 100%;
+}
+.lg_count {
+  width: 100%;
+}
+.lg_count > h1 {
+  width: 100%;
+  text-align: center;
+  padding: 60px 0;
+  color: #ffcf49;
+  letter-spacing: 10px;
+  font-weight: normal;
+}
+.lg_count > form {
+  width: 100%;
+}
+.lg_count > form span {
+  margin: 0 auto;
+  display: block;
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 80%;
+  height: 50px;
+  line-height: 40px;
+  margin-top: 20px;
+}
+.lg_count > form span > i {
+  color: #ffcf49;
+  padding: 0 10px;
+  font-size: 20px;
+  display: block;
+  float: left;
+  margin-top: 4px;
+}
+.lg_count > form span input {
+  height: 100%;
+  width: 80%;
+  display: block;
+  float: right;
+  border: none;
+  background: none;
+}
+.lg_count > form span input::-webkit-input-placeholder {
+  color: #fff;
+}
+.lg_count > form > input {
+  text-align: center;
+  padding: 10px 16%;
+  background-color: #ffcf49;
+  border-radius: 10px;
+  color: black;
+  margin: 20px auto;
+  display: block;
+}
+.fg_password {
+  width: 80%;
+  margin: 0 auto;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  border-top: 2px solid #ffcf49;
+}
+.fg_password a {
+  color: #ffcf49;
+}
