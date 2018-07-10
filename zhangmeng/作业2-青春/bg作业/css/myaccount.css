@@ -1,0 +1,106 @@
+*,::after,::before {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+input,textarea{
+    outline: none;
+    resize: none;
+    border:none;
+    -webkit-appearance: none;
+}
+a{
+    text-decoration: none;
+}
+.f_left{
+    float: left;
+}
+.f_right{
+    float: right;
+}
+.clearfix::after,
+.clearfix::before {
+    content: '';
+    line-height: 0;
+    height: 0;
+    visibility: hidden;
+    display: block;
+    clear:both;
+}
+.icon {
+    width: 1em; height: 1em;
+    vertical-align: -0.15em;
+    fill: currentColor;
+    overflow: hidden;
+    color: orange;
+}
+.layout{
+    min-width:300px;
+    max-width: 640px;
+    margin:0 auto;
+}
+.my{
+    width: 100%;
+    position: relative;
+}
+.my a.myicon{
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    color: orange;
+    top: 10px;
+    left:10px;
+    font-size: 20px;
+}
+.my .myinfo{
+    width: 100%;
+    height: 160px;
+    background-color: #000000;
+
+}
+.my .img{
+    position: relative;
+    left: 50%;
+    top: 20px;
+    margin-left: -40px ;
+}
+.my .img img{
+    position: absolute;
+    width: 80px;
+    height: 80px;
+}
+.myinfo .level{
+    position: absolute;
+    left:50%;
+    margin-left: -40px;
+    padding-left: 20px;
+    padding-right: 10px;
+    bottom: 10px;
+    height: 25px;
+    color: orange;
+    border: 1px solid orange;
+    font-size: 12px;
+    text-align: center;
+    line-height: 25px;
+
+}
+
+.my a.level{
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    color: orange;
+    bottom: 10px;
+    left:50px;
+    font-size: 20px;
+}
+svg { fill: url(orange);}
+
+.my a.level:before{
+    color: orange;
+}
+.my .mymoney{
+    
+}

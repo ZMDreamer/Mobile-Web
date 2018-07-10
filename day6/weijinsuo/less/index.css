@@ -1,4 +1,7 @@
 /* 头部样式 */
+body {
+  height: 2000px;
+}
 .wjs_header {
   height: 50px;
   border-bottom: 1px solid #ccc;
@@ -62,6 +65,7 @@
 }
 .navbar.wjs-nav .navbar-nav > li.active > a {
   border-bottom: 3px solid #e92322;
+  background-color: #f8f8f8;
 }
 .navbar.wjs-nav .navbar-nav > li > a {
   height: 80px;
@@ -70,4 +74,193 @@
 }
 .navbar.wjs-nav .navbar-nav > li > a:hover {
   border-bottom: 3px solid #e92322;
+}
+/* 轮播图样式 */
+.wjs_banner {
+  /* 大于768的样式 */
+}
+.wjs_banner .pcImg {
+  display: block;
+  height: 410px;
+  background-position: center center;
+  background-size: cover;
+}
+.wjs_banner .moblieImg {
+  display: block;
+  width: 100%;
+}
+.wjs_banner .moblieImg img {
+  width: 100%;
+  display: block;
+}
+/* 微金所预定模块 */
+.wjs_inf {
+  padding: 30px;
+}
+.wjs_inf .row > div > a {
+  width: 80%;
+  margin-top: 20px;
+  display: block;
+}
+.wjs_inf .row > div > a span {
+  font-size: 30px;
+}
+.wjs_inf .row > div > a:hover {
+  color: #e92322;
+}
+/* 微金所预定模块*/
+.wjs_reserve {
+  margin-top: 10px;
+  height: 60px;
+  line-height: 60px;
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+}
+.wjs_reserve .row .wjs_icon {
+  font-size: 18px;
+}
+.wjs_reserve .row a:hover {
+  color: #e92322;
+}
+.wjs_reserve .row .reserve_now {
+  color: #e92322;
+  border-bottom: 1px dashed #e92322;
+}
+/* 微金所新闻模块 */
+.wjs_news {
+  background-color: #eee;
+  padding: 20px;
+}
+.wjs_news .table_parent {
+  overflow: hidden;
+}
+.wjs_news .table_parent > ul {
+  width: 756px;
+}
+.wjs_news .table_parent > ul > li {
+  margin-bottom: 0;
+  padding: 0px 15px;
+}
+.wjs_news .table_parent > ul > li.active > a {
+  background-color: transparent;
+  border-radius: 0px;
+  border: none;
+  border-bottom: 3px solid #e92322;
+}
+.wjs_news .table_parent > ul > li.active > a:hover,
+.wjs_news .table_parent > ul > li.active > a:focus {
+  outline: none;
+  border: none;
+  background-color: transparent;
+  border-bottom: 3px solid #e92322;
+  border-radius: 0px;
+}
+.wjs_news .table_parent > ul > li > a {
+  border: none;
+  border-radius: 0px;
+  line-height: 50px;
+}
+.wjs_news .table_parent > ul > li > a:hover,
+.wjs_news .table_parent > ul > li > a:focus {
+  background-color: transparent;
+  border-bottom: 3px solid #e92322;
+}
+.wjs_news .tab-content .wjs_box {
+  position: relative;
+  margin-top: 20px;
+  height: 150px;
+  background-color: #fff;
+}
+.wjs_news .tab-content .wjs_box .tip_tool {
+  width: 100%;
+  position: absolute;
+  left: 50%;
+  top: 10px;
+  transform: translateX(-50%);
+}
+.wjs_news .tab-content .wjs_box .tip_tool span {
+  padding: 2px 2px;
+  border-radius: 0px;
+  color: blue;
+  border-color: blue;
+}
+.wjs_news .tab-content .wjs_box .tip_tool span:first-child {
+  color: #e92322;
+  border-color: #e92322;
+}
+.wjs_news .tab-content .wjs_box .tip_tool span:hover last-child {
+  background-color: #fff;
+  border-color: blue;
+  color: blue;
+}
+.wjs_news .tab-content .wjs_box .tip_tool span:hover {
+  background-color: #fff;
+}
+.wjs_news .tab-content .wjs_box.active {
+  background-color: #e92322;
+  color: #fff;
+}
+.wjs_news .tab-content .wjs_box.active .wjs_left:before {
+  width: 25px;
+  height: 25px;
+  content: "\e915";
+  font-family: "wjs";
+  position: absolute;
+  left: 0;
+  top: -5px;
+  font-size: 25px;
+}
+.wjs_news .tab-content .wjs_box.active .wjs_right > b {
+  color: #fff;
+}
+.wjs_news .tab-content .wjs_box .wjs_left {
+  margin-right: 100px;
+  height: 150px;
+  padding-top: 10px;
+  font-size: 12px;
+}
+.wjs_news .tab-content .wjs_box .wjs_left .row {
+  margin-right: -10px;
+  margin-left: -10px;
+}
+.wjs_news .tab-content .wjs_box .wjs_left .row > div:nth-of-type(even) {
+  text-align: right;
+}
+.wjs_news .tab-content .wjs_box .wjs_left > p {
+  text-align: center;
+  font-size: 16px;
+  width: 100%;
+}
+.wjs_news .tab-content .wjs_box .wjs_right {
+  width: 100px;
+  height: 150px;
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  border-left: 1px dashed #ccc;
+  text-align: center;
+  padding-top: 30px;
+}
+.wjs_news .tab-content .wjs_box .wjs_right:before,
+.wjs_news .tab-content .wjs_box .wjs_right:after {
+  content: "";
+  height: 10px;
+  width: 10px;
+  left: -5px;
+  border-radius: 50%;
+  background-color: #eee;
+  position: absolute;
+}
+.wjs_news .tab-content .wjs_box .wjs_right::after {
+  top: -5px;
+}
+.wjs_news .tab-content .wjs_box .wjs_right::before {
+  bottom: -5px;
+}
+.wjs_news .tab-content .wjs_box .wjs_right > b {
+  font-size: 40px;
+  color: #e92322;
+}
+.wjs_news .tab-content .wjs_box .wjs_right > sub {
+  bottom: 0;
 }

@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no"/>
+
+    <style>
+        *{margin: 0;padding: 0;box-sizing:border-box;}
+        html,body{width:100%;height:100%;}
+        .layout{width:100%;height:100%;position:relative;max-width: 640px;min-width:320px;margin:0 auto;display:flex;
+            flex-direction:column;overflow:hidden;}
+
+        .img{
+            display:block;
+            width: 100%;
+            margin:0 auto;
+        }
+         .active{/*background:#cc3f6e*/border-bottom: 2px solid red}
+
+         ul{list-style: none;margin: 0;padding:0;}
+         #ul1 {width: 100%;z-index:2;background: #fff;text-align: center;/*padding:0 5px;*/}
+         #ul1 li{float:left;width:50%;line-height:30px;}
+         .box{flex:1;width: 100%;overflow:hidden;padding:5px;position:relative}
+        .box ul{display: none;}
+        .box .current{display: block;padding-bottom:30px;}
+        .box .current li{border:1px solid red;float:left;width: 32%;text-align:center;padding:5px;margin:2px 0}
+        .box .current li:nth-child(3n-1){margin:2px 2% ;}
+        .box .current li p{font-size:12px;}
+        .box .current li img{display:block;  width: 100%;margin:0 auto; }
+        .clearFix::before , .clearFix::after{
+            content: "";
+            display: block;
+            height: 0;
+            line-height: 0px;
+            clear: both;
+            visibility: hidden;
+        }
+
+        .music{
+            position: fixed;
+            top:5px;
+            right:5px;
+            width: 30px;
+            height: 30px;
+            background-color: black;
+            border-radius: 50%;
+            background: url("images/music_03.png") no-repeat;
+            background-size: 30px 30px;
+            z-index:999;
+        }
+        .musics{
+            animation: musics 1s linear infinite;
+        }
+        @keyframes musics {
+            from{}
+            to{
+                transform: rotateZ(360deg);
+            }
+        }
+
+        
+        .bg{
+            position:relative;
+        }
+        
+    </style>
+
+</head>
+<body>
+<div class="layout">
+    <div class='bg'>
+         <img class="img" src="images/vote_bg.png" alt="">
+    </div>
+   
+
+    
+    <div class="music musics">
+        <audio autoplay loop  src="music/鹿先森乐队%20-%20春风十里.mp3"></audio>
+        <audio autoplay loop  src="music/music.mp3"></audio>
+    </div>
+   
+        <ul id="ul1" class="clearFix">
+            <li class="active">微电影成片</li>
+            <li>微电影成片1</li>
+        </ul>
+
+        <div class="box" id="box">
+        <div>
+            <ul class="current clearFix">
+                <li><img src="images/vote_bg.png" alt="">
+                     <h5>《1234567》</h5>
+                    <p>武昌东湖学院</p>
+                    <p>张三</p>
+
+                    <img src="images/event_button.png" alt="">
+                </li>
+                <li><img src="images/vote_bg.png" alt="">
+                    <h5>《1234567》</h5>
+                    <p>武昌东湖学院</p>
+                    <p>张三</p>
+
+                    <img src="images/event_button.png" alt="">
+                </li>
+
+                <li><img src="images/vote_bg.png" alt="">
+                    <h5>《1234567》</h5>
+                    <p>武昌东湖学院</p>
+                    <p>张三</p>
+
+                    <img src="images/event_button.png" alt="">
+                </li>
+
+                <li><img src="images/vote_bg.png" alt="">
+                     <h5>《1234567》</h5>
+                    <p>武昌东湖学院</p>
+                    <p>张三</p>
+
+                    <img src="images/event_button.png" alt="">
+                </li>
+
+                <li><img src="images/vote_bg.png" alt="">
+                     <h5>《1234567》</h5>
+                    <p>武昌东湖学院</p>
+                    <p>张三</p>
+
+                    <img src="images/event_button.png" alt="">
+                </li>
+
+                <li><img src="images/vote_bg.png" alt="">
+                     <h5>《1234567》</h5>
+                    <p>武昌东湖学院</p>
+                    <p>张三</p>
+
+                    <img src="images/event_button.png" alt="">
+                </li>
+
+                <li><img src="images/vote_bg.png" alt="">
+                     <h5>《1234567》</h5>
+                    <p>武昌东湖学院</p>
+                    <p>张三</p>
+
+                    <img src="images/event_button.png" alt="">
+                </li>
+            </ul>
+
+            <ul class="clearFix">
+                <li><img src="images/vote_bg.png" alt="">
+                     <h5>《1234567》</h5>
+                    <p>武昌东湖学院</p>
+                    <p>张三</p>
+
+                    <img src="images/event_button.png" alt="">
+                </li>
+                <li><img src="images/vote_bg.png" alt="">
+                     <h5>《1234567》</h5>
+                    <p>武昌东湖学院</p>
+                    <p>张三</p>
+
+                    <img src="images/event_button.png" alt="">
+                </li>
+
+                <li><img src="images/vote_bg.png" alt="">
+                     <h5>《1234567》</h5>
+                    <p>武昌东湖学院</p>
+                    <p>张三</p>
+
+                    <img src="images/event_button.png" alt="">
+                </li>
+
+                <li><img src="images/vote_bg.png" alt="">
+                     <h5>《1234567》</h5>
+                    <p>武昌东湖学院</p>
+                    <p>张三</p>
+
+                    <img src="images/event_button.png" alt="">
+                </li>
+
+                <li><img src="images/vote_bg.png" alt="">
+                     <h5>《1234567》</h5>
+                    <p>武昌东湖学院</p>
+                    <p>张三</p>
+
+                    <img src="images/event_button.png" alt="">
+                </li>
+
+                <li><img src="images/vote_bg.png" alt="">
+                     <h5>《1234567》</h5>
+                    <p>武昌东湖学院</p>
+                    <p>张三</p>
+
+                    <img src="images/event_button.png" alt="">
+                </li>
+
+                <li><img src="images/vote_bg.png" alt="">
+                     <h5>《1234567》</h5>
+                    <p>武昌东湖学院</p>
+                    <p>张三22222222222222222</p>
+
+                    <img src="images/event_button.png" alt="">
+                </li>
+            </ul>
+        </div>
+            
+        </div>
+
+   
+</div>
+</body>
+<script>
+    var ul1=document.getElementById("ul1");
+    var box=document.getElementById("box");
+    var lis=ul1.children;
+    var uls=box.querySelectorAll('ul');
+    
+    console.log(uls);
+
+
+    for(i=0;i<lis.length;i++){
+        lis[i].index=i;
+        lis[i].onclick = function () {
+            for(i=0;i<lis.length;i++) {
+                lis[i].className="";
+            };
+            for(i=0;i<uls.length;i++) {
+                uls[i].className="";
+            };
+            lis[this.index].className="active";
+            uls[this.index].className="clearFix current";
+        }
+    }
+
+
+</script>
+
+<!-- 音乐 -->
+<script>
+    window.onload=function () {
+        var  music=document.querySelector('.music');
+        var audio=document.querySelector('audio');
+        music.onclick=function () {
+            /*this.style.background='url(images/music_03.png)  center/30px 30px';*/
+            if(this.classList.contains('musics')){
+                this.style.background='url(images/music1_03.png)  center/30px 30px';
+                audio.pause();
+                this.classList.remove('musics');
+            }else{
+                this.classList.add('musics');
+                this.style.background='url(images/music_03.png)  center/30px 30px';
+                audio.play();
+
+
+            }
+        }
+    }
+</script>
+
+
+<script src="js/iscroll.js"></script>
+<script>
+        var myScroll = new IScroll('.box',{
+            mouseWheel: true,
+            scrollbars: true
+        });
+</script>
+
+</html>

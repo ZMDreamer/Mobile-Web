@@ -1,6 +1,10 @@
 @basecolor: #e92322;
 /* 头部样式 */
 
+body {
+    height: 2000px;
+}
+
 .wjs_header {
     height: 50px;
     border-bottom: 1px solid #ccc;
@@ -26,7 +30,6 @@
                 img {
                     display: block;
                     z-index: 999;
-                    
                 }
             }
         }
@@ -61,10 +64,10 @@
         .navbar-brand {
             height: 80px;
             line-height: 50px;
-            >span{
+            >span {
                 font-size: 40px;
                 color: @basecolor;
-                &:last-of-type{
+                &:last-of-type {
                     color: #333;
                 }
             }
@@ -74,6 +77,7 @@
                 &.active {
                     >a {
                         border-bottom: 3px solid @basecolor;
+                        background-color: #f8f8f8;
                     }
                 }
                 >a {
@@ -83,6 +87,221 @@
                     &:hover {
                         border-bottom: 3px solid @basecolor;
                     }
+                }
+            }
+        }
+    }
+}
+
+/* 轮播图样式 */
+
+.wjs_banner {
+    /* 大于768的样式 */
+    .pcImg {
+        display: block;
+        height: 410px;
+        background-position: center center;
+        background-size: cover;
+    }
+    .moblieImg {
+        display: block;
+        width: 100%;
+        img {
+            width: 100%;
+            display: block;
+        }
+    }
+}
+
+/* 微金所预定模块 */
+
+.wjs_inf {
+    padding: 30px;
+    .row {
+        >div {
+            >a {
+                width: 80%;
+                margin-top: 20px;
+                display: block;
+                span {
+                    font-size: 30px;
+                }
+                &:hover {
+                    color: @basecolor;
+                }
+            }
+        }
+    }
+}
+
+/* 微金所预定模块*/
+
+.wjs_reserve {
+    margin-top: 10px;
+    height: 60px;
+    line-height: 60px;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    .row {
+        .wjs_icon {
+            font-size: 18px;
+        }
+        a {
+            &:hover {
+                color: @basecolor;
+            }
+        }
+        .reserve_now {
+            color: @basecolor;
+            border-bottom: 1px dashed @basecolor;
+        }
+    }
+}
+
+/* 微金所新闻模块 */
+
+.wjs_news {
+    background-color: #eee;
+    padding: 20px;
+    .table_parent {
+        overflow: hidden;
+        >ul {
+            width: 756px;
+            >li {
+                margin-bottom: 0;
+                padding: 0px 15px;
+                &.active {
+                    >a {
+                        background-color: transparent;
+                        border-radius: 0px;
+                        border: none;
+                        border-bottom: 3px solid @basecolor;
+                        &:hover,
+                        &:focus {
+                            outline: none;
+                            border: none;
+                            background-color: transparent;
+                            border-bottom: 3px solid @basecolor;
+                            border-radius: 0px;
+                        }
+                    }
+                }
+                >a {
+                    border: none;
+                    border-radius: 0px;
+                    line-height: 50px;
+                    &:hover,
+                    &:focus {
+                        background-color: transparent;
+                        border-bottom: 3px solid @basecolor;
+                    }
+                }
+            }
+        }
+    }
+    .tab-content {
+        .wjs_box {
+            position: relative;
+            margin-top: 20px;
+            height: 150px;
+            background-color: #fff;
+            .tip_tool {
+                width: 100%;
+                position: absolute;
+                left: 50%;
+                top: 10px;
+                transform: translateX(-50%);
+                span {
+                    padding: 2px 2px;
+                    border-radius: 0px;
+                    color: blue;
+                    border-color: blue;
+                    &:first-child {
+                        color: @basecolor;
+                        border-color: @basecolor;
+                    }
+                    &:hover {
+                        last-child {
+                            background-color: #fff;
+                            border-color: blue;
+                            color: blue;
+                        }
+                    }
+                    &:hover {
+                        background-color: #fff;
+                    }
+                }
+            }
+            &.active {
+                background-color: @basecolor;
+                color: #fff;
+                .wjs_left {
+                    &:before {
+                        width: 25px;
+                        height: 25px;
+                        content: "\e915";
+                        font-family: "wjs";
+                        position: absolute;
+                        left: 0;
+                        top: -5px;
+                        font-size: 25px;
+                    }
+                }
+                .wjs_right {
+                    >b {
+                        color: #fff;
+                    }
+                }
+            }
+            .wjs_left {
+                margin-right: 100px;
+                height: 150px;
+                padding-top: 10px;
+                font-size: 12px;
+                .row {
+                    margin-right: -10px;
+                    margin-left: -10px;
+                    >div:nth-of-type(even) {
+                        text-align: right;
+                    }
+                }
+                >p {
+                    text-align: center;
+                    font-size: 16px;
+                    width: 100%;
+                }
+            }
+            .wjs_right {
+                width: 100px;
+                height: 150px;
+                position: absolute;
+                right: 0px;
+                top: 0px;
+                border-left: 1px dashed #ccc;
+                text-align: center;
+                padding-top: 30px;
+                &:before,
+                &:after {
+                    content: "";
+                    height: 10px;
+                    width: 10px;
+                    left: -5px;
+                    border-radius: 50%;
+                    background-color: #eee;
+                    position: absolute;
+                }
+                &::after {
+                    top: -5px;
+                }
+                &::before {
+                    bottom: -5px;
+                }
+                >b {
+                    font-size: 40px;
+                    color: @basecolor;
+                }
+                >sub {
+                    bottom: 0;
                 }
             }
         }
