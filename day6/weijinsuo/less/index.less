@@ -1,10 +1,6 @@
 @basecolor: #e92322;
 /* 头部样式 */
 
-body {
-    height: 2000px;
-}
-
 .wjs_header {
     height: 50px;
     border-bottom: 1px solid #ccc;
@@ -158,9 +154,9 @@ body {
     }
 }
 
-/* 微金所新闻模块 */
+/* 微金所产品模块 */
 
-.wjs_news {
+.wjs_product {
     background-color: #eee;
     padding: 20px;
     .table_parent {
@@ -203,7 +199,6 @@ body {
         .wjs_box {
             position: relative;
             margin-top: 20px;
-            height: 150px;
             background-color: #fff;
             .tip_tool {
                 width: 100%;
@@ -255,7 +250,6 @@ body {
             }
             .wjs_left {
                 margin-right: 100px;
-                height: 150px;
                 padding-top: 10px;
                 font-size: 12px;
                 .row {
@@ -303,6 +297,103 @@ body {
                 >sub {
                     bottom: 0;
                 }
+            }
+        }
+    }
+}
+/* 微金所新闻模块*/
+.wjs_news{
+    padding: 20px;
+    >.container{
+        >.row{
+            >div:first-of-type{
+                >h3{
+                    font-size: 25px;
+                    text-align: center;
+                    line-height: 50px;
+                    border-bottom: 1px solid #ccc;
+                    position: relative;
+                    &::after{
+                        content:" ";
+                        width: 8px;
+                        height: 8px;
+                        border-radius: 50%;
+                        border: 1px solid #ccc;
+                        position: absolute;
+                        right: -8px;
+                        bottom: -4px;
+                    }
+                }
+            }
+            >div:nth-child(2){
+                >.nav-tabs{
+                    border: none;
+                    >li{
+                        margin-bottom: 60px;
+                        @media screen and (min-width:768px) and (max-width:992px){
+                            padding: 20px 40px;
+                        }
+                        @media screen and (max-width:768px){
+                            width: 25%;
+                            margin: 20px 0;
+                            padding-left: 15px;
+                           
+                        }
+                        &.active{
+                            >a{
+                            background-color: @basecolor;
+                            border: 0;
+
+                            }
+                        }
+                        >a{
+                            width: 60px;
+                            height: 60px;
+                            border-radius: 50%;
+                            background-color: #ccc;
+                            border: 0;
+                            >span{
+                                font-size: 30px;
+                                color: #fff;
+                            }
+                        }
+                    }
+                }
+            }
+            >div:nth-child(3){
+                >div{
+                    >div:nth-child(1){
+                        >ul{
+                            list-style: none;
+                            >li{
+                                line-height: 60px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+/* 微金所底部模块 */
+.wjs_foot{
+    background-color: #eee;
+    padding: 20px; 
+    text-align: center;
+    h3{
+        width: 100%;
+        margin: 10px 0 20px
+        
+    }
+    ul{
+        list-style: none;
+        display: inline-block;
+        >li{
+            float: left;
+            margin-left: 20px;
+            >a{
+                font-size: 80px;
+
             }
         }
     }
