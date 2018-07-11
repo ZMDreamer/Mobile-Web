@@ -133,9 +133,7 @@ body {
 }
 .wjs_news .table_parent {
   overflow: hidden;
-}
-.wjs_news .table_parent > ul {
-  width: 756px;
+  width: 100%;
 }
 .wjs_news .table_parent > ul > li {
   margin-bottom: 0;

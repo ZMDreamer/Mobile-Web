@@ -35,5 +35,19 @@ $(function(){
    })
    /* 工具提示 */
    $('[data-toggle="tooltip"]').tooltip();
+   /* 中间新闻导航条滑动事件 */
+   /* 获取需要操作的元素 */
+   var lis = $('.table_parent>ul>li');
+   var ulBOX = $('.table_parent>ul');
+   var totalWidth = 0;
+   lis.each(function(index,value){
+       totalWidth+=$(value).innerWidth();
+   })
+   ulBOX.width(totalWidth);
+// 利用滑动插件
+var myScroll = new IScroll('.table_parent',{
+     /*设置水平滑动，不允许垂直滑动*/
+     scrollX: true, scrollY: false
+});
 
 })
