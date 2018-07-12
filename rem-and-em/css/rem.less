@@ -1,0 +1,62 @@
+/* 通过这种方法引入公共样式 */
+@import "normalize.less";
+@import "fonts.less";
+@import "base.less";
+.layout{
+    width: 100%;
+    max-width: 640px;
+    min-width: 320px;
+    margin: 0 auto;
+}
+.content{
+    >.topContent{
+        font-size: 0.28rem;
+        overflow: hidden;
+        >p{
+            float: left;
+            padding: 0.2rem 0 0.3rem 0.22rem;
+            
+        }
+        >span{
+            float: right;
+            color: #aaa9a9;
+            padding: 0.2rem 0.22rem 0.3rem 0;
+        }
+    }
+    >.addContent{
+        background-color: #fff;
+        width: 5.87rem;
+        height: 2.21rem;
+        border: 2px dashed #ccc;
+        margin: 0 auto;
+        position: relative;
+        >span{
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-57%,-70%);
+            font-size: 1rem;
+            text-align: center;
+            color: #aaa9a9;
+
+        }
+        >a{
+            font-size: 0.28rem;
+            color: #aaa9a9;
+            position: absolute;
+            bottom: 0.36rem;
+            left: 50%;
+            transform: translateX(-50%);
+
+        }
+    }
+}
+.footer{
+    margin-top: 1.2rem;
+    font-size: 0.28rem;
+    color: #aaa9a9;
+    padding-left: 0.2rem;
+    >p{
+        line-height: 0.6rem;
+    }
+}

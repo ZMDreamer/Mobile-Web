@@ -1,0 +1,203 @@
+
+// 导入文件
+@import '../../../4-代码/css/fonts.less';
+
+@import 'normalize.less';
+
+@import 'base.less';
+
+@import 'adapter.less';
+
+@import 'mixin.less';
+
+.index {
+
+	.items {
+		padding: 0 24 / 32rem;
+	}
+
+	.title {
+		line-height: 1;
+		margin: 28 / 32rem 0;
+		overflow: hidden;
+		font-size: 28 / 32rem;
+
+		h4 {
+			float: left;
+		}
+
+		span {
+			float: right;
+			color: #888;
+		}
+	}
+	
+	// 公共部分
+	.item {
+		margin-bottom: 30 / 32rem;
+		
+		// &代表.item
+		&:not(.add) {
+			overflow: hidden;
+			.border-radius(0.4rem);
+		}
+		
+		// 主体
+		.body {
+			height: 234 / 32rem;
+			position: relative;
+
+			.extra {
+				width: 100%;
+				padding: 0 24 / 32rem;
+				font-size: 22 / 32rem;
+				color: #FFF;
+				.box-sizing;
+				position: absolute;
+				left: 0;
+				bottom: 36 / 32rem;
+			}
+
+			p {
+				position: relative;
+
+				&:last-child {
+					margin-top: 16 / 32rem;
+				}
+
+				a {
+					position: absolute;
+					top: -6 / 32rem;
+					right: 0;
+					line-height: 1;
+					padding: 6 / 32rem;
+					.border-radius;
+				}
+			}
+		}
+		
+		// 操作
+		.action {
+			height: 80 / 32rem;
+			padding: 16 / 32rem 0;
+			text-align: center;
+			background-color: #FFF;
+			.box-sizing;
+			display: flex;
+
+			position: relative;
+
+			&:after {
+				content: '';
+				display: block;
+				width: 100%;
+				height: 8 / 32rem;
+				// background-color: red;
+				background-image: url(../images/icon.png);
+				background-size: auto 8 / 32rem;
+				position: absolute;
+				left: 0;
+				top: -8 / 32rem;
+			}
+
+			a {
+				flex: 1;
+				line-height: 48 / 32rem;
+				border-right: 1px solid #e8e2d9;
+				font-size: 26 / 32rem;
+
+				&:last-child {
+					border-right: none;
+				}
+
+				span {
+					color: #888;
+				}
+			}
+		}
+	}
+
+	// .item:not(.add) {
+
+	// }
+	
+	// 全场优惠
+	.all {
+		
+		// 主体
+		.body {
+			background-color: #55bc75;
+
+			p {
+
+				a {
+					color: #bdf3ce;
+					background-color: #2a603b;
+				}
+			}
+		}
+
+		.action {
+
+			a {
+				color: #55bc75;
+			}
+		}
+	}
+
+	// 券
+	.coupon {
+
+		// 主体
+		.body {
+			background-color: #a974bc;
+
+			p {
+
+				a {
+					color: #f2d8fb;
+					background-color: #6a4279;
+				}
+			}
+		}
+
+		.action {
+
+			a {
+				color: #a974bc;
+			}
+		}
+	}
+	
+	// 添加按钮
+	.add {
+		height: 216 / 32rem;
+		padding-top: 36 / 32rem;
+		border: 3 / 32rem dashed #dedede;
+		background-color: #FFF;
+		font-size: 104 / 32rem;
+		.box-sizing;
+
+		a {
+			width: 160 / 32rem;
+			text-align: center;
+			color: #aeaeae;
+			margin: 0 auto;
+		}
+
+		span {
+			display: block;
+			margin-top: 16 / 32rem;
+			font-size: 26 / 32rem;
+		}
+	}
+	
+	// 提示
+	.tips {
+		line-height: 1.5;
+		padding: 0 24 / 32rem;
+		margin: 120 / 32rem 0;
+		font-size: 24 / 32rem;
+		color: #999;
+	}
+}

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable = no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Difference between em and rem</title>
+</head>
+<body>
+    em和rem的区别:
+        em: 一种长度单位,参照当前元素的字号,如果没有设置就参照元素或者当前浏览器默认字号 (1em = font-size);
+        rem: 是css3新增长度单位,它是参照根元素(html)的字号,如果没有就参照当前浏览器默认字号 (1rem = font-size此处的是html的字号);
+    注意: 引用rem中的时候,设置html的字体大小利用js来动态设置:
+    1. 获取屏幕宽度
+    2. font-size = width/当前稿件的宽*100
+    3. 给html设置字体大小
+    4. 利用trigger触发resize事件
+</body>
+</html>
